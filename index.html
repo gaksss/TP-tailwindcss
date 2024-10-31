@@ -31,85 +31,137 @@
 
   <header>
     <nav class="flex justify-between w-[100%]">
-      <img src="./assets/images/logo.svg" class="py-2 size-[15vw]" />
-
       <img
-        src="./assets/images/icon-menu.svg"
-        data-popover-target="menu"
-        class="sm:hidden size-[10vw] py-2 border border-transparent text-center text-sm text-white transition-all hover:shadow-lg focus:shadow-none active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2 active:rotate-90"
+        src="./assets/images/logo.svg"
+        class="py-2 size-[15vw] lg:size-[3vw] lg:"
       />
+      <div id="NavbarMobile">
+        <img
+          src="./assets/images/icon-menu.svg"
+          data-popover-target="menu"
+          class="lg:hidden size-[10vw] py-2 border border-transparent text-center text-sm text-white transition-all hover:shadow-lg focus:shadow-none active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2 active:rotate-90"
+        />
 
-      <ul
-        role="menu"
-        data-popover="menu"
-        data-popover-placement="bottom"
-        class="absolute z-10 min-w-[180px] overflow-auto rounded-lg border border-slate-200 bg-white p-1.5 shadow-lg shadow-sm focus:outline-none"
-      >
-        <li
-          role="menuitem"
-          class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:text-red-400"
+        <ul
+          role="menu"
+          data-popover="menu"
+          data-popover-placement="bottom"
+          class="absolute z-10 min-w-[180px] overflow-auto rounded-lg border border-slate-200 bg-white p-1.5 focus:outline-none"
         >
-          Home
-        </li>
-        <li
-          role="menuitem"
-          class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:text-red-400"
-        >
-          New
-        </li>
-        <li
-          role="menuitem"
-          class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:text-red-400"
-        >
-          Popular
-        </li>
-        <li
-          role="menuitem"
-          class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:text-red-400 "
-        >
-          Trending
-        </li>
-        <li
-          role="menuitem"
-          class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:text-red-400"
-        >
-          Categories
-        </li>
-      </ul>
+          <li
+            role="menuitem"
+            class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:text-red-400"
+          >
+            Home
+          </li>
+          <li
+            role="menuitem"
+            class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:text-red-400"
+          >
+            New
+          </li>
+          <li
+            role="menuitem"
+            class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:text-red-400"
+          >
+            Popular
+          </li>
+          <li
+            role="menuitem"
+            class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:text-red-400"
+          >
+            Trending
+          </li>
+          <li
+            role="menuitem"
+            class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:text-red-400"
+          >
+            Categories
+          </li>
+        </ul>
+      </div>
+      <div class="hidden sm:flex sm:mb-14" id="NavbarDesktop">
+        <ul class="flex gap-5 font-semibold">
+          <li
+            class="cursor-pointer text-gray-500 flex w-full text-sm items-center rounded-md p-3 transition-all hover:text-red-400 sm:text-xl"
+          >
+            Home
+          </li>
+          <li
+            class="cursor-pointer text-gray-500 flex w-full text-sm items-center rounded-md p-3 transition-all hover:text-red-400 sm:text-xl"
+          >
+            New
+          </li>
+          <li
+            class="cursor-pointer text-gray-500 flex w-full text-sm items-center rounded-md p-3 transition-all hover:text-red-400 sm:text-xl"
+          >
+            Popular
+          </li>
+          <li
+            class="cursor-pointer text-gray-500 flex w-full text-sm items-center rounded-md p-3 transition-all hover:text-red-400 sm:text-xl"
+          >
+            Trending
+          </li>
+          <li
+            class="cursor-pointer text-gray-500 flex w-full text-sm items-center rounded-md p-3 transition-all hover:text-red-400 sm:text-xl"
+          >
+            Categories
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
-  <body class="font-body px-4">
-    <img src="./assets/images/image-web-3-mobile.jpg" />
-
-    <h1 class="text-4xl font-bold text-left w-[80%]">
-      The Bright Future of Web 3.0?
-    </h1>
-    <p class="pt-4 pb-4 font-light">
-      We dive into the next evolution of the web that claims to put the power of
-      the platforms back into the hands of the people. But is it really
-      fulfilling its promise?
-    </p>
-    <button
-      class="bg-red-400 text-white py-3 px-10 font-semibold tracking-widest hover:bg-slate-950"
-    >
-      READ MORE
-    </button>
+  <body class="font-body px-4 lg:px-20 lg:py-14">
+    <img class="sm:hidden" src="./assets/images/image-web-3-mobile.jpg" />
+    <div class="sm:w-[60%]">
+      <img
+        class="hidden sm:block"
+        src="./assets/images/image-web-3-desktop.jpg"
+      />
+      <div class="sm:flex sm:justify-between">
+        <h1
+          class="text-4xl font-bold text-left w-[80%] sm:w-[35%] sm:text-5xl sm:mt-10"
+        >
+          The Bright Future of Web 3.0?
+        </h1>
+        <div class="flex-col sm:w-[53%] pl-16 items-end">
+          <p class="pt-4 pb-4 font-light">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <button
+            class="bg-red-400 text-white py-3 px-10 font-semibold tracking-widest hover:bg-slate-950"
+          >
+            READ MORE
+          </button>
+        </div>
+      </div>
+    </div>
     <section>
       <div class="mt-12 bg-slate-950 px-6 py-2 mb-12">
         <h3 class="text-orange-300 text-4xl font-semibold">New</h3>
 
-        <a href="#"><h4 class="pt-4 text-xl font-semibold text-white hover:text-orange-300">
-          Hydrogen VS Electric Cars
-        </h4></a>
+        <a href="#"
+          ><h4
+            class="pt-4 text-xl font-semibold text-white hover:text-orange-300"
+          >
+            Hydrogen VS Electric Cars
+          </h4></a
+        >
         <p
           class="font-thin text-base text-gray-300 leading-loose tracking-wide mb-6"
         >
           Will hydrogen-fueled cars ever catch up to EVs?
         </p>
         <hr class="border-[0.1]" />
-        <a href="#"><h4 class="pt-4 text-xl font-semibold text-white hover:text-orange-300">
-          The Downsides of AI Artistry
-        </h4></a>
+        <a href="#"
+          ><h4
+            class="pt-4 text-xl font-semibold text-white hover:text-orange-300"
+          >
+            The Downsides of AI Artistry
+          </h4></a
+        >
         <p
           class="font-thin text-base text-gray-300 leading-loose tracking-wide mb-6"
         >
@@ -117,9 +169,13 @@
           generation?
         </p>
         <hr class="border-[0.1]" />
-        <a href="#"><h4 class="pt-4 text-xl font-semibold text-white hover:text-orange-300">
-          Is VC Funding Drying Up?
-        </h4></a>
+        <a href="#"
+          ><h4
+            class="pt-4 text-xl font-semibold text-white hover:text-orange-300"
+          >
+            Is VC Funding Drying Up?
+          </h4></a
+        >
         <p
           class="font-thin text-base text-gray-300 leading-loose tracking-wide mb-6"
         >
@@ -137,7 +193,11 @@
         />
         <div class="pl-6">
           <h2 class="text-3xl font-bold text-gray-300">01</h2>
-          <a href="#" ><h3 class="pt-1 text-xl text-black font-bold hover:text-red-400">Reviving Retro PCs</h3></a>
+          <a href="#"
+            ><h3 class="pt-1 text-xl text-black font-bold hover:text-red-400">
+              Reviving Retro PCs
+            </h3></a
+          >
           <p class="pt-1 text-lg text-gray-500 font-light">
             What happens when old PCs are given modern upgrades?
           </p>
@@ -151,9 +211,11 @@
         />
         <div class="pl-6">
           <h2 class="text-3xl font-bold text-gray-300">02</h2>
-          <a href="#"><h3 class="pt-1 text-xl text-black font-bold hover:text-red-400">
-            Top 10 Laptops of 2022
-          </h3></a>
+          <a href="#"
+            ><h3 class="pt-1 text-xl text-black font-bold hover:text-red-400">
+              Top 10 Laptops of 2022
+            </h3></a
+          >
           <p class="pt-1 text-lg text-gray-500 font-light">
             Our best picks for various needs and budgets.
           </p>
@@ -167,9 +229,11 @@
         />
         <div class="pl-6">
           <h2 class="text-3xl font-bold text-gray-300">03</h2>
-          <a href="#"><h3 class="pt-1 text-xl text-black font-bold hover:text-red-400">
-            The Growth of Gaming
-          </h3></a>
+          <a href="#"
+            ><h3 class="pt-1 text-xl text-black font-bold hover:text-red-400">
+              The Growth of Gaming
+            </h3></a
+          >
           <p class="pt-1 text-lg text-gray-500 font-light">
             How the pandemic has sparked fresh opportunities.
           </p>
