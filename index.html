@@ -28,60 +28,77 @@
       }
     </style>
   </head>
-  <body class="font-body px-4">
-    <header>
-      <nav class="flex justify-between w-[100%]">
-        <img src="./assets/images/logo.svg" class="py-2 size-[15vw]">
-        
-        <img
-          src="./assets/images/icon-menu.svg"
-          data-popover-target="menu"
-          class="sm:hidden size-[10vw]  py-2 border border-transparent text-center text-sm text-white transition-all hover:shadow-lg focus:shadow-none active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2 active:rotate-90 "
-        />
 
-        <ul
-          role="menu"
-          data-popover="menu"
-          data-popover-placement="bottom"
-          class="absolute z-10 min-w-[180px] overflow-auto rounded-lg border border-slate-200 bg-white p-1.5 shadow-lg shadow-sm focus:outline-none"
+  <header>
+    <nav class="flex justify-between w-[100%]">
+      <img src="./assets/images/logo.svg" class="py-2 size-[15vw]" />
+
+      <img
+        src="./assets/images/icon-menu.svg"
+        data-popover-target="menu"
+        class="sm:hidden size-[10vw] py-2 border border-transparent text-center text-sm text-white transition-all hover:shadow-lg focus:shadow-none active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2 active:rotate-90"
+      />
+
+      <ul
+        role="menu"
+        data-popover="menu"
+        data-popover-placement="bottom"
+        class="absolute z-10 min-w-[180px] overflow-auto rounded-lg border border-slate-200 bg-white p-1.5 shadow-lg shadow-sm focus:outline-none"
+      >
+        <li
+          role="menuitem"
+          class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100"
         >
-          <li
-            role="menuitem"
-            class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100"
-          >
-            Home
-          </li>
-          <li
-            role="menuitem"
-            class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100"
-          >
-            New
-          </li>
-          <li
-            role="menuitem"
-            class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100"
-          >
-            Popular
-          </li>
-          <li
-            role="menuitem"
-            class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100"
-          >
-            Trending
-          </li>
-          <li
-            role="menuitem"
-            class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100"
-          >
-            Categories
-          </li>
-        </ul>
-      </nav>
-    </header>
+          Home
+        </li>
+        <li
+          role="menuitem"
+          class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100"
+        >
+          New
+        </li>
+        <li
+          role="menuitem"
+          class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100"
+        >
+          Popular
+        </li>
+        <li
+          role="menuitem"
+          class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100"
+        >
+          Trending
+        </li>
+        <li
+          role="menuitem"
+          class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100"
+        >
+          Categories
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <body class="font-body px-4">
+    <img src="./assets/images/image-web-3-mobile.jpg" />
 
-    <!-- The Bright Future of Web 3.0? We dive into the next evolution of the web
-    that claims to put the power of the platforms back into the hands of the
-    people. But is it really fulfilling its promise? Read more New Hydrogen VS
+    <h1 class="text-4xl font-bold text-left w-[80%]">
+      The Bright Future of Web 3.0?
+    </h1>
+    <p class="pt-4 pb-4 font-light">
+      We dive into the next evolution of the web that claims to put the power of
+      the platforms back into the hands of the people. But is it really
+      fulfilling its promise?
+    </p>
+    <button
+      class="bg-red-400 text-white py-3 px-10 font-semibold tracking-widest"
+    >
+      READ MORE
+    </button>
+
+
+    <div></div>
+
+    <!-- New Hydrogen VS
     Electric Cars Will hydrogen-fueled cars ever catch up to EVs? The Downsides
     of AI Artistry What are the possible adverse effects of on-demand AI image
     generation? Is VC Funding Drying Up? Private funding by VC firms is down 50%
